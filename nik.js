@@ -21,7 +21,7 @@ function generateQRCode() {
     scannedCounts[sku] = 0; // Initialize scanned count
 
     for (let i = 0; i < quantity; i++) {
-        const uniqueId = `${sku}-${Math.floor(100000 + Math.random() * 900000)}`;
+        const uniqueId = `${sku}-${Math.floor(1000000 + Math.random() * 9000000)}`;
         const qrData = { partyName, sku, uniqueId, requiredQuantity, scannedQuantity: 0, thickness };
 
         const qrCodeDiv = document.createElement('div');
